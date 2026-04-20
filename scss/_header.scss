@@ -1,0 +1,45 @@
+/*header*/
+.header {
+    background-color: $color-header-bg;
+    display: flex;
+    align-items: center;
+    height: 56px;
+
+    &__logo {
+        margin-left: 15px;
+    }
+
+    &__nav {
+        margin: 0 auto;
+        display: none;
+    }
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+        width: 100%;
+    }
+
+    &__nav-item {
+        font-size: 12px;
+        font-weight: bold;
+        align-items: center;
+
+        a {
+            @include link-hover;
+        }
+    }
+
+    @media(min-width:768px) {
+        height: 90px;
+
+        &__logo {
+            margin-left: 240px;
+        }
+
+        &__nav {
+            display: block;
+        }
+    }
+}

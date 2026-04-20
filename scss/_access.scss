@@ -1,0 +1,69 @@
+/*access*/
+.access {
+    padding: 50px 15px;
+    background-color: $color-bg-sub;
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: bold;
+        align-items: center;
+        padding-bottom: 60px;
+        @include title-line(30px);
+
+        @media(min-width:768px) {
+            @include title-line;
+        }
+    }
+
+    &__body {
+        display: block;
+
+        @media(min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        font-size: 16px;
+        font-weight: 700;
+        grid-template-columns: 74px 1fr;
+
+        @media (min-width:768px) {
+            grid-template-columns: 100px 1fr;
+        }
+    }
+
+    &__list-title {
+        padding-right: 10px;
+    }
+
+    &__list-title,
+    &__list-text {
+        border-bottom: 1px solid $color-border;
+        padding: 20px 0px 10px;
+    }
+
+    &__map {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            filter: sepia(20%);
+        }
+
+        @media(min-width:768px) {
+            width: 467.5px;
+        }
+    }
+
+    @media(min-width:768px) {
+        padding: 60px 240px;
+    }
+}

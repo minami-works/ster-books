@@ -1,0 +1,31 @@
+.about {
+    background-color: $color-bg;
+    padding: 50px 15px;
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: bold;
+        align-items: center;
+        padding-bottom: 60px;
+        @include title-line(30px);
+
+        @media(min-width:768px) {
+            @include title-line;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    @media(min-width:768px) {
+        padding: 60px 240px;
+    }
+}

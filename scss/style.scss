@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@use 'scss/_variables' as *;
+@use 'scss/_mixins' as *;
+
+@use 'scss/_base';
+
+@use 'scss/_header';
+@use 'scss/_hero';
+@use 'scss/_about';
+@use 'scss/_service';
+@use 'scss/_faq';
+@use 'scss/_access';
+@use 'scss/_footer';
