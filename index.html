@@ -32,19 +32,23 @@
 
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img src="img/logo.svg" alt="Ster Books" class="header__logo-img" />
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="Ster Books" class="header__logo-img" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about">私たちについて</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#service">店内での過ごし方</a>
+            </li>
+            <li class="header__nav-item"><a href="#faq">よくあるご質問</a></li>
+            <li class="header__nav-item"><a href="#access">アクセス</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#about">私たちについて</a></li>
-          <li class="header__nav-item">
-            <a href="#service">店内での過ごし方</a>
-          </li>
-          <li class="header__nav-item"><a href="#faq">よくあるご質問</a></li>
-          <li class="header__nav-item"><a href="#access">アクセス</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="hero">
@@ -71,109 +75,121 @@
         </h1>
       </section>
       <section class="about" id="about">
-        <h2 class="about__title">私たちについて</h2>
-        <p class="about__text">
-          Ster Booksは、<br />コーヒーと本をゆっくり楽しむための小さな古本屋です。
-        </p>
-        <p class="about__text">
-          店内ではコーヒーを片手に、<br />気になる本を自由に手に取ってお過ごしいただけます。
-        </p>
-        <p class="about__text">
-          静かな時間の中で出会った一冊は、<br />そのままご購入いただくことも可能です。
-        </p>
+        <div class="about__inner">
+          <h2 class="about__title">私たちについて</h2>
+          <p class="about__text">
+            Ster Booksは、<br />コーヒーと本をゆっくり楽しむため<br
+              class="about__sp-only"
+            />の小さな古本屋です。
+          </p>
+          <p class="about__text">
+            店内ではコーヒーを片手に、<br />気になる本を自由に手に取って<br
+              class="about__sp-only"
+            />お過ごしいただけます。
+          </p>
+          <p class="about__text">
+            静かな時間の中で出会った一冊は、<br />そのままご購入いただくことも可能です。
+          </p>
+        </div>
       </section>
       <section class="service" id="service">
-        <h2 class="service__title">店内での過ごし方</h2>
-        <div class="service__list">
-          <div class="service__card">
-            <img
-              src="img/service01.png"
-              alt="温かいコーヒー"
-              class="service__card-img"
-              width="304"
-              height="200"
-            />
-            <p class="service__card-title">コーヒーを楽しむ</p>
-            <p class="service__card-text">
-              店内で丁寧に淹れたコーヒーをご用意しています。
-            </p>
-          </div>
-          <div class="service__card">
-            <img
-              src="img/service02.png"
-              alt="本を手に取る"
-              class="service__card-img"
-              width="304"
-              height="200"
-            />
-            <p class="service__card-title">本を手に取る</p>
-            <p class="service__card-text">
-              気になる本を自由に読みながらお選びいただけます。
-            </p>
-          </div>
-          <div class="service__card">
-            <img
-              src="img/service03.png"
-              alt="本を持ち帰る"
-              class="service__card-img"
-              width="304"
-              height="200"
-            />
-            <p class="service__card-title">本を持ち帰る</p>
-            <p class="service__card-text">
-              気に入った本はそのままご購入いただけます。
-            </p>
+        <div class="service__inner">
+          <h2 class="service__title">店内での過ごし方</h2>
+          <div class="service__list">
+            <div class="service__card">
+              <img
+                src="img/service01.png"
+                alt="温かいコーヒー"
+                class="service__card-img"
+                width="304"
+                height="200"
+              />
+              <p class="service__card-title">コーヒーを楽しむ</p>
+              <p class="service__card-text">
+                店内で丁寧に淹れたコーヒーをご用意しています。
+              </p>
+            </div>
+            <div class="service__card">
+              <img
+                src="img/service02.png"
+                alt="本を手に取る"
+                class="service__card-img"
+                width="304"
+                height="200"
+              />
+              <p class="service__card-title">本を手に取る</p>
+              <p class="service__card-text">
+                気になる本を自由に読みながらお選びいただけます。
+              </p>
+            </div>
+            <div class="service__card">
+              <img
+                src="img/service03.png"
+                alt="本を持ち帰る"
+                class="service__card-img"
+                width="304"
+                height="200"
+              />
+              <p class="service__card-title">本を持ち帰る</p>
+              <p class="service__card-text">
+                気に入った本はそのままご購入いただけます。
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section class="faq" id="faq">
-        <h2 class="faq__title">よくあるご質問</h2>
-        <dl class="faq__list">
-          <dt class="faq__question">店内でコーヒーは飲めますか？</dt>
-          <dd class="faq__answer">
-            はい、ご注文いただいたコーヒーを店内でお楽しみいただけます。<br />お席でゆっくりと本を読みながらお過ごしください。
-          </dd>
-          <dt class="faq__question">本は自由に読むことができますか？</dt>
-          <dd class="faq__answer">
-            店内の本はご自由に手に取ってお読みいただけます。<br />気に入った一冊はそのままご購入も可能です。
-          </dd>
-          <dt class="faq__question">現金以外にも決済方法はありますか？</dt>
-          <dd class="faq__answer">
-            現金のほか、クレジットカードや交通系IC、<br />PayPayなどのキャッシュレス決済にも対応しています。
-          </dd>
-          <dt class="faq__question">長時間の滞在は可能ですか？</dt>
-          <dd class="faq__answer">
-            混雑時を除き、時間を気にせずご利用いただけます。<br />長時間のご利用の際は譲り合いにご協力をお願いします。
-          </dd>
-        </dl>
+        <div class="faq__inner">
+          <h2 class="faq__title">よくあるご質問</h2>
+          <dl class="faq__list">
+            <dt class="faq__question">店内でコーヒーは飲めますか？</dt>
+            <dd class="faq__answer">
+              はい、ご注文いただいたコーヒーを店内でお楽しみいただけます。<br />お席でゆっくりと本を読みながらお過ごしください。
+            </dd>
+            <dt class="faq__question">本は自由に読むことができますか？</dt>
+            <dd class="faq__answer">
+              店内の本はご自由に手に取ってお読みいただけます。<br />気に入った一冊はそのままご購入も可能です。
+            </dd>
+            <dt class="faq__question">現金以外にも決済方法はありますか？</dt>
+            <dd class="faq__answer">
+              現金のほか、クレジットカードや交通系IC、<br />PayPayなどのキャッシュレス決済にも対応しています。
+            </dd>
+            <dt class="faq__question">長時間の滞在は可能ですか？</dt>
+            <dd class="faq__answer">
+              混雑時を除き、時間を気にせずご利用いただけます。<br />長時間のご利用の際は譲り合いにご協力をお願いします。
+            </dd>
+          </dl>
+        </div>
       </section>
       <section class="access" id="access">
-        <h2 class="access__title">アクセス</h2>
-        <div class="access__body">
-          <address class="access__address">
-            <dl class="access__list">
-              <dt class="access__list-title">住所</dt>
-              <dd class="access__list-text">
-                〒030-0000　長野県〇〇町△△ 1-2-3
-              </dd>
-              <dt class="access__list-title">営業時間</dt>
-              <dd class="access__list-text">9:00~18:00</dd>
-              <dt class="access__list-title">最寄駅</dt>
-              <dd class="access__list-text">〇〇駅　徒歩5分</dd>
-              <dt class="access__list-title">電話番号</dt>
-              <dd class="access__list-text">000-0000-0000</dd>
-            </dl>
-          </address>
-          <div class="access__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.7417884494766!2d138.63366517528146!3d36.34280739335017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd37cf27c88e7%3A0xd9734bba4ae24071!2z6Lu95LqV5rKi6aeF!5e0!3m2!1sja!2sjp!4v1776446328244!5m2!1sja!2sjp"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <div class="access__inner">
+          <h2 class="access__title">アクセス</h2>
+          <div class="access__body">
+            <address class="access__address">
+              <dl class="access__list">
+                <dt class="access__list-title">住所</dt>
+                <dd class="access__list-text">
+                  〒030-0000　長野県〇〇町△△ 1-2-3
+                </dd>
+                <dt class="access__list-title">営業時間</dt>
+                <dd class="access__list-text">9:00~18:00</dd>
+                <dt class="access__list-title">最寄駅</dt>
+                <dd class="access__list-text">〇〇駅　徒歩5分</dd>
+                <dt class="access__list-title">電話番号</dt>
+                <dd class="access__list-text">000-0000-0000</dd>
+              </dl>
+            </address>
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.7417884494766!2d138.63366517528146!3d36.34280739335017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dd37cf27c88e7%3A0xd9734bba4ae24071!2z6Lu95LqV5rKi6aeF!5e0!3m2!1sja!2sjp!4v1776446328244!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

@@ -1,39 +1,41 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+
 /*footer*/
 .footer {
-    padding: 20px 15px;
-    background-color: $color-footer-bg;
-    color: $color-white;
+  padding: 20px 15px;
+  background-color: $color-footer-bg;
+  color: $color-white;
 
-    &__nav-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 
-        @media(min-width:768px) {
-            gap: 30px;
-        }
+    @media (min-width: 768px) {
+      gap: 30px;
     }
-    
-    &__nav-item {
-        font-size: 12px;
+  }
 
-        a {
-            @include link-hover;
-        }
+  &__nav-item {
+    font-size: 12px;
+
+    a {
+      @include link-hover;
     }
+  }
 
-    &__copy {
-        border-top: 1px solid $color-border;
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 20px;
+  &__copy {
+    border-top: 1px solid $color-border;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
 
-        @media(min-width:768px) {
-            padding-bottom: 30px;
-        }
+    @media (min-width: 768px) {
+      padding-bottom: 30px;
     }
+  }
 }
-

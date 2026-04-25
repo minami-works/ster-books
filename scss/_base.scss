@@ -1,6 +1,9 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+
 body {
-    background: $color-bg;
-    font-family: $font-jp;
-    color: $color-text;
-    overflow-x: hidden;
+  background: $color-bg;
+  font-family: $font-jp;
+  color: $color-text;
+  overflow-x: hidden;
 }

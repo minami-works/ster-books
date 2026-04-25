@@ -1,57 +1,68 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+
 /*faq*/
 .faq {
-    background-color: $color-bg-sub;
-    padding: 50px 15px;
+  background-color: $color-bg-sub;
+  padding: 50px 15px;
 
-    &__title {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 32px;
-        font-weight: bold;
-        align-items: center;
-        padding-bottom: 58px;
-        @include title-line(30px);
+  &__inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    padding-bottom: 58px;
+    @include title-line(30px);
 
-        @media(min-width:768px) {
-            @include title-line;
-        }
+    @media (min-width: 768px) {
+      @include title-line;
     }
+  }
 
-    &__question {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 18px;
-        margin-top: 34px;
-        line-height: 1.2;
+  &__question {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 34px;
+    line-height: 1.2;
 
-        &::before {
-            content: "Q";
-            font-size: 32px;
-            font-weight: 700;
-            margin-right: 8px;
-        }
+    &::before {
+      content: "Q";
+      font-size: 32px;
+      font-weight: 700;
+      margin-right: 8px;
     }
+  }
 
-    &__answer {
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid $color-border;
-        padding: 0 15px 24px 0px;
-        line-height: 1.5;
-        
-        &::before {
-            content: "A";
-            font-size: 32px;
-            font-weight: 700;
-            padding-right: 15px;
-        }
-    }
+  &__answer {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-border;
+    padding: 0 15px 24px 0px;
+    line-height: 1.5;
 
-    @media(min-width:768px) {
-        padding: 60px 240px;
+    &::before {
+      content: "A";
+      font-size: 32px;
+      font-weight: 700;
+      padding-right: 15px;
     }
+  }
+
+  @media (min-width: 768px) {
+    padding: 60px;
+  }
 }

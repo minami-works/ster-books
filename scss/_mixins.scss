@@ -1,24 +1,25 @@
+@use "_variables" as *;
 /*mixin*/
 @mixin title-line($width: 60px) {
-    &::before {
-        content: "";
-        width: $width;
-        border: 1px solid $color-border;
-        margin-right: 10px;
-    }
+  &::before {
+    content: "";
+    width: $width;
+    border: 1px solid $color-border;
+    margin-right: 10px;
+  }
 
-    &::after {
-        content: "";
-        width: $width;
-        border: 1px solid $color-border;
-        margin-left: 10px;
-    }
+  &::after {
+    content: "";
+    width: $width;
+    border: 1px solid $color-border;
+    margin-left: 10px;
+  }
 }
 
 @mixin link-hover {
-    transition: opacity 0.3s;
+  transition: opacity 0.3s;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 }
