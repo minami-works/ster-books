@@ -36,7 +36,19 @@
         <div class="header__logo">
           <img src="img/logo.svg" alt="Ster Books" class="header__logo-img" />
         </div>
-        <nav class="header__nav">
+        <button
+          class="header__nav-btn"
+          id="spMenuBtn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="globalNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>MENU</span>
+        </button>
+        <nav class="header__nav" id="globalNav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a href="#about">私たちについて</a>
@@ -49,6 +61,7 @@
           </ul>
         </nav>
       </div>
+      <div class="header__overlay" id="navOverlay"></div>
     </header>
     <main>
       <section class="hero">
@@ -142,20 +155,56 @@
         <div class="faq__inner">
           <h2 class="faq__title">よくあるご質問</h2>
           <dl class="faq__list">
-            <dt class="faq__question">店内でコーヒーは飲めますか？</dt>
-            <dd class="faq__answer">
+            <dt class="faq__question">
+              <button
+                class="faq__question-btn"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+              >
+                店内でコーヒーは飲めますか？
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-answer-1">
               はい、ご注文いただいたコーヒーを店内でお楽しみいただけます。<br />お席でゆっくりと本を読みながらお過ごしください。
             </dd>
-            <dt class="faq__question">本は自由に読むことができますか？</dt>
-            <dd class="faq__answer">
+            <dt class="faq__question">
+              <button
+                class="faq__question-btn"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+              >
+                本は自由に読むことができますか？
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-answer-2">
               店内の本はご自由に手に取ってお読みいただけます。<br />気に入った一冊はそのままご購入も可能です。
             </dd>
-            <dt class="faq__question">現金以外にも決済方法はありますか？</dt>
-            <dd class="faq__answer">
+            <dt class="faq__question">
+              <button
+                class="faq__question-btn"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+              >
+                現金以外にも決済方法はありますか？
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-answer-3">
               現金のほか、クレジットカードや交通系IC、<br />PayPayなどのキャッシュレス決済にも対応しています。
             </dd>
-            <dt class="faq__question">長時間の滞在は可能ですか？</dt>
-            <dd class="faq__answer">
+            <dt class="faq__question">
+              <button
+                class="faq__question-btn"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+              >
+                長時間の滞在は可能ですか？
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-answer-4">
               混雑時を除き、時間を気にせずご利用いただけます。<br />長時間のご利用の際は譲り合いにご協力をお願いします。
             </dd>
           </dl>
@@ -207,5 +256,6 @@
       </nav>
       <small class="footer__copy">&copy; 2026, Ster Books</small>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
